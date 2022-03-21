@@ -1,0 +1,30 @@
+﻿<Window x:Class="DataContextDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataContextDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="80"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Margin="4" Text="First Name" VerticalAlignment="Center"/>
+		<TextBox Margin="4" Text="{Binding Path=FirstName}" Grid.Column="1"/>
+	
+		<TextBlock Margin="4" Text="Last Name" Grid.Row="1" VerticalAlignment="Center"/>
+		<TextBox Margin="4" Text="{Binding Path=LastName}" Grid.Column="1" Grid.Row="1"/>
+
+		<TextBlock Margin="4" Text="Age" Grid.Row="2" VerticalAlignment="Center"/>
+		<TextBox Margin="4" Text="{Binding Path=Age}" Grid.Column="1" Grid.Row="2"/>
+
+	</Grid>
+</Window>
