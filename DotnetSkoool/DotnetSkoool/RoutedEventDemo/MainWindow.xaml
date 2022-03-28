@@ -11,12 +11,12 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0"/>
         </Grid.ColumnDefinitions>
-        <Button Name="OuterButton" Height="75" Click="OuterButton_Click">
+        <Button Name="OuterButton" Height="75" Click="OuterButton_Click" PreviewMouseMove="OutterButton_MouseMove">
             <StackPanel Orientation="Horizontal">
                 <Label Height="50" FontSize="20" Content="Label Display"/>
                 <Canvas Height="50" Width="100">
                     <Ellipse Name="outerEllipse" Fill="Green" Height="50" Width="90" Cursor="Hand" MouseDown="outerEllipse_MouseDown"/>
-                    <Button Content="InnerButton" Height="25" Width="75" Canvas.Left="-240" Canvas.Top="7"/>
+                    <Button Content="InnerButton" Height="25" Width="75" Canvas.Left="-240" Canvas.Top="7" Click="InnerButton_Click"/>
                     <Ellipse Name="innerEllipse" Fill="Yellow" Height="50" Width="90" Cursor="Hand" Canvas.Left="95"/>
                 </Canvas>
             </StackPanel>

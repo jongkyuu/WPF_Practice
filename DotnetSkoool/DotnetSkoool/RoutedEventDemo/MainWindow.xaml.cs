@@ -32,7 +32,19 @@ namespace RoutedEventDemo
 
         private void outerEllipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Green Ellipse Click!");
+            //MessageBox.Show("Green Ellipse Click!");
+            this.Title = "Green Ellipse has Changed the Title";
+
+        }
+
+        private void InnerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Innter Button Click!");
+        }
+
+        private void OutterButton_MouseMove(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Outter Button Mouse Move!");
 
         }
     }
