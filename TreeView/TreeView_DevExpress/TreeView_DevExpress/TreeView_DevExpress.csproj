@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Images" Version="21.2.7" />
+    <PackageReference Include="DevExpress.Utils" Version="21.2.7" />
+    <PackageReference Include="DevExpress.Wpf.Demos" Version="21.2.7" />
+    <PackageReference Include="DevExpress.Wpf.Grid" Version="21.2.7" />
+  </ItemGroup>
+
+</Project>
